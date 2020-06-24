@@ -1,0 +1,179 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 40px 20px 40px 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+.container{
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header{
+    width: 380px;
+    height:200px;
+    background-image: url('../img/toDOlist.jpg');
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    background-color: #FFF;
+    overflow: auto;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-radius: 0 0 15px 15px;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
+.add-to-do i{
+    font-size: 34px;
+    color: #000000;
+}
+.add-to-do i:hover{
+    color:#6eb200;
+    cursor: pointer;
+}
+
+.addButton{
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 2px;
+    padding: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.item {
+    display: flex;
+    height: 36px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.content ul{
+    padding:0;
+    margin:0;
+}
+
+/*check-uncheck;*/
+.item i.co{
+    font-size: 22px;
+    margin: 8px 2px;
+}
+
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+
+/*text-input;*/
+.text{
+    width: 285px;
+    margin: 4px;
+    font-size: 20px;
+    outline: 0;
+    border: none;
+    background-color: white;
+}
+
+
+.lineThrough{
+    text-decoration: line-through;
+    color : black;
+    font-style: italic;
+}
+
+/*edit button;*//*removeButton;*/
+.editButton, .removeButton{
+    outline: none;
+    border: 0;
+    padding: 0;
+    background-color: white;
+    cursor: pointer;
+}
+.item i.edit, .item i.remove{
+    font-size: 22px;
+    margin: 6px;
+}
+.item i.edit:hover, .item i.remove:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #000000;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
