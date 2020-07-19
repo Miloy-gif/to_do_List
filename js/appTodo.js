@@ -1,4 +1,3 @@
-// CODE EXPLAINED channel
 
 // Select the Elements
 const clear = document.querySelector(".clear");
@@ -48,7 +47,6 @@ const today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
 // add to do function
-
 function addToDo(toDo, id, done, pencil, trash){
 
     if(trash || pencil){ return; }
@@ -62,9 +60,7 @@ function addToDo(toDo, id, done, pencil, trash){
      <button class="editButton" ><i class="fa fa-pencil edit"job="edit" id="${id}"></i></button>                  
                     <i class="fa fa-trash-o remove" job="delete" id="${id}"></i>
                   </li>`;
-
     const position = "beforeend";
-
     list.insertAdjacentHTML(position, item);
 }
 
@@ -111,16 +107,15 @@ function removeToDo(element){
 }
 
 // target the items created dynamically
-
 list.addEventListener("click", function(event){
     const element = event.target; // return the clicked element inside list
     const elementJob = element.attributes.job.value; // complete or delete
 
-    if(elementJob == "complete"){
+    if(elementJob === "complete"){
         completeToDo(element);
-    }else if(elementJob == "delete"){
+    }else if(elementJob === "delete"){
         removeToDo(element);
-    }else if(elementJob == "edit"){
+    }else if(elementJob === "edit"){
         editText(element);
     }
 
