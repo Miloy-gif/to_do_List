@@ -77,7 +77,6 @@ body{
     background-color: transparent;
     border: none;
     font-size: 20px;
-    padding-left:10px;
 }
 .add-to-do i{
     font-size: 34px;
@@ -97,8 +96,6 @@ body{
     background-color: white;
     cursor: pointer;
 }
-
-
 .item {
     display: flex;
     height: 36px;
@@ -126,17 +123,17 @@ body{
 /*text-input;*/
 .text{
     width: 285px;
-    /*margin: 4px;*/
     font-size: 18px;
+    font-weight: 500;
     outline: 0;
     border: none;
     background-color: white;
+    color: #000000;
 }
-
 
 .lineThrough{
     text-decoration: line-through;
-    color : black;
+    color: #000000;
     font-style: italic;
 }
 
@@ -162,26 +159,3 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-
-
-/*.add-to-do input::-webkit-input-placeholder { !* Chrome/Opera/Safari *!*/
-/*    color: #000000;*/
-/*    font-family: 'Titillium Web', sans-serif;*/
-/*    font-size: 20px;*/
-/*}*/
-/*.add-to-do input::-moz-placeholder { !* Firefox 19+ *!*/
-/*    color: #000000;*/
-/*    font-family: 'Titillium Web', sans-serif;*/
-/*    font-size: 20px;*/
-/*}*/
-/*.add-to-do input:-ms-input-placeholder { !* IE 10+ *!*/
-/*    color: #000000;*/
-/*    font-family: 'Titillium Web', sans-serif;*/
-/*    font-size: 20px;*/
-/*}*/
-/*.add-to-do input:-moz-placeholder { !* Firefox 18- *!*/
-/*    color: #000000;*/
-/*    font-family: 'Titillium Web', sans-serif;*/
-/*    font-size: 20px;*/
-/*}*/
